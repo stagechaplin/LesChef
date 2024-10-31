@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Categoryheader.css">
+  <link rel="stylesheet" href="../css/LIst.css">
+  <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/LoginModal.css">
+  <title>Les Chef Category</title>
+</head>
+<body>
+<header>
+  <!-- 로고,게시판,로그인, 자물쇠 위치 -->
+  <div id="headerspace">
+    <div id="board"><a href="NoticeBoardMain.html"><img src="../img/레시피 아이콘/게시판아이콘.png"/></a></div>
+    <div id="logo"><a href="/main"><img src="../img/레시피 아이콘/로고.png"/></a></div>
+    <div id="icon2"><a href="Rewrite.html"><img id="mypageicon" src="../img/레시피 아이콘/마이페이지.png"/></a>
+      <img id="loginButton" src="../img/레시피 아이콘/자물쇠 1.png" width="55"/>
+    </div>
+  </div>
+  <!-- 빨간 가로바 텍스트 -->
+  <div id="categoryback">
+    <div class="name">
+      <a href="/list"><div><span class="categorybox">한식</span></div></a>
+      <a href="/list"><div><span class="categorybox">일식</span></div></a>
+      <a href="/list"><div><span class="categorybox" >중식</span></div></a>
+      <a href="/list"><div><span class="categorybox">양식</span></div></a>
+      <a href="/list"><div><span class="categorybox">공유</span></div></a>
+    </div>
+  </div>
+</header>
+<main>
+  <!-- 이미지, 카테고리 텍스트 -->
+  <div id="onimg"><img src="../img/레시피 아이콘/한식가로.png"/>
+    <span id="ontext">Western Food</span>
+  </div>
+
+  <!-- 세부 카테고리 텍스트 및 버튼  -->
+  <div id="decategory">
+    <span class="subcategory" style=" color:black">전체보기 </span>
+    <span class="subcategory">국물류 </span>
+    <span class="subcategory">볶음류 </span>
+    <span class="subcategory">튀김류 </span>
+    <span class="subcategory">기타</span>
+
+    <button class="listbutton">최신순</button>
+    <button class="listbutton">조회순</button>
+  </div>
+
+  <form action="#" method="#" >
+    <img id="search" src="../img/레시피 아이콘/search.png" width="55px"/>
+    <input id="searchtext"></input>
+  </form>
+  <!-- 리스트 목록 -->
+  <div id="listwrap">
+    <!-- ---------------------변수로 바꿀시 밑 부분제외, 이 부분 반복 뿌리기 -------------------------------------------------------- -->
+    <div class="listmain">
+      <a href="/inform">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3>레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+
+    <!-- ----------------------------------------------------------------------------- -->
+    <div class="listmain">
+      <a href="/informShare">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3> 공유 레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+
+    <div class="listmain">
+      <a href="inform.html">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3>레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+    <div class="listmain">
+      <a href="informShare.html">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3> 공유 레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+    <div class="listmain">
+      <a href="inform.html">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3>레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+    <div class="listmain">
+      <a href="informShare.html">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3> 공유 레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+    <div class="listmain">
+      <a href="inform.html">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3>레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+    <div class="listmain">
+      <a href="informShare.html">
+        <img class="listimg"src="../img/레시피 아이콘/예시1.png">
+        <h3> 공유 레시피 제목</h3>
+        <ul class="listcontent"><img class="icon" src="../img/레시피 아이콘/마이페이지.png" width="25"/><li class="nickname">by 닉네임</li><li class="timeset">소요시간</li><li class="runtime">10-15분</li></ul>
+        <ul class="submix"> <img class="star" src="../img/레시피 아이콘/평점.png"><li class="everage">평점 4.5</li><img class="eye" src="../img/레시피 아이콘/조회수.png"><li class="eyenumber">800</li></ul>
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <!--로그인 모달-->
+  <div class="loginModal">
+    <div class="Login-box">
+      <a id="Login-box-Logo" href="/main"><img src="../img/image/main_logo.png" /></a>
+      <form class="login-form-container">
+        <label>이메일(아이디)</label><br>
+        <input type="email"/><br>
+        <label>비밀번호</label><br>
+        <input type="password"/>
+        <p id="FindIdPw">아이디 / 비밀번호 찾기</p><br>
+        <div id="social-login-block">
+          <a class="social-login" href="#"><img src="../img/image/Kakao.jpg"/></a>
+          <a class="social-login" href="#"><img src="../img/image/Google_logo.png"/></a>
+          <a class="social-login" href="#"><img src="../img/image/Naver_logo.png"/></a>
+        </div>
+        <button class="login-button" type="submit">로그인</button>
+      </form>
+
+      <form class="find-form-container">
+        <div class="id-pw-button">
+          <span class="id-button">아이디</span>
+          <span class="pw-button">패스워드</span>
+        </div>
+        <div class="id-form-container">
+          <label>이름</label>
+          <input type="text"/>
+          <label>휴대폰</label>
+          <input type="text"/>
+        </div>
+        <div class="pw-form-container">
+          <label>이름</label>
+          <input type="text"/>
+          <label>휴대폰</label>
+          <input type="text"/>
+          <label>이메일(아이디)</label>
+          <input type="text"/>
+        </div>
+        <button class="find-button">찾기</button>
+      </form>
+      <p>아직 아이디가 없으신가요?<br> 회원가입으로 더 많은 요리정보를 얻으세요!</p>
+      <a href="./main#signup-area" class="go-to-join-page">회원가입</a>
+      <p class="find-to-login">이미 회원이신가요? <span>로그인</span></p>
+    </div>
+  </div>
+</main>
+<script src="../js/List.js"></script>
+<script src="../js/loginModal.js"></script>
+</body>
+</html>

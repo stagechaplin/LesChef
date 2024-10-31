@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/NoticeBoardHeader.css">
+  <link rel="stylesheet" href="../css/Gesigeul.css">
+  <title>게시판</title>
+</head>
+<body><!--작성자 이름,작성자 이미지, 조회수, 게시글 이미지, 작성일자, 작성된 댓글(댓글 작성자 이미지,이름,내용), 이전 다음페이지 url-->
+  <header>
+    <div  class="logoBackGround">
+      <a href="/main"><img src="../img/img/Logo.jpg"></a>
+    </div>
+    <a href="Login.html"><img src="../img/img/Login.png" class="Login"></a>
+  </header>
+  <main>
+    <div class="gesiTopImg">
+      <span>게시글</span>
+    </div>
+    <!--이전,다음페이지 버튼까지-->
+    <img src="../img/img/LArrow-black.png" class="BeforePage" onclick="location.href='NoticeBoardMain.html'">
+    <div class="gesiBox">
+      <h1 class="gesiTitle">감자짜글이 JMT 실화냐? 먹고 뒤질뻔 ㅋㅋ</h1>
+      <!--수정 삭제 버튼-->
+      <button type="button" onclick="location.href='[[@{/noticeEdit}]]'" class="editDelete">수정</button>
+      <span>|</span>
+      <button type="button"class="editDelete">삭제</button>
+      <!--게시글 메인 이미지-->
+      <img src="../img/img/bibimbab.jpg" class="gesiMainImg">
+      <pre class="gesiContent">
+        아니 만들었는데 황천의 짜글이 될뻔 ㅋㅋㅋ 
+        아 일단 만든거 올린다 
+        개추나 눌러라~아니 만들었는데 황천의 짜글이 될뻔 ㅋㅋㅋ 
+        아 일단 만든거 올린다 
+        개추나 눌러라~아니 만들었는데 황천의 짜글이 될뻔 ㅋㅋㅋ 
+        아 일단 만든거 올린다 
+        개추나 눌러라~아니 만들었는데 황천의 짜글이 될뻔 ㅋㅋㅋ 
+        아 일단 만든거 올린다 
+        개추나 눌러라~ 
+      </pre>
+      <!--작성자 이름, 조회수 gesiWriterName=flex-->
+      <div class="gesiWriterName">
+        <!--gesiWriterNameContent1,2=inline-flex-->
+        <span class="gesiWriterNameContent1">
+          <img src="../img/img/duck.jpg">
+          <span>오리너구리</span>
+        </span>
+        <span class="gesiWriterNameContent2">
+          <img src="../img/img/views-black.jpg">
+          <span>0.5k</span>
+        </span>
+      </div>
+      <!--이전,다음페이지 버튼 prevNextBtnBox,prevNextBtn=flex-->
+      <div class="prevNextBtnBox">
+        <button>
+          <div class="prevNextBtn">
+            <img src="../img/img/LArrow.jpg" class="prev">
+            <span>이전 포스트</span>
+          </div>
+        </button>
+        <button>
+          <div class="prevNextBtn">
+            <span>다음 포스트</span>
+            <img src="../img/img/RArrow.jpg" class="next">
+          </div>
+        </button>
+      </div>
+    </div>
+    <!--댓글 및 답글-->
+    <div class="commentBox">
+      <!--댓글 내용 전송-->
+      <form onsubmit = "addComment(event)">
+        <div class="commentInputContainer">
+          <div id="hashTag"><b><div id="nameTag"></div></b><img id="closeTag" src="../img/img/cancel.png"/></div>
+          <textarea type="text" placeholder="댓글을 입력해주세요" class="commentInput" size="105"></textarea>
+        </div>
+        <!--전송 버튼 commentWriteBtn=flex-->
+        <button type="submit" class="commentWriteBtn">
+          <span>등록</span>
+          <img src="../img/img/commentWrite.jpg">
+        </button>
+      </form>
+      <!--댓글 목록 comment,,commentContent=flex-->
+      <div class="commentRepeat">
+        <div class="card my-3">
+          <div class="comment">
+            <img src="../img/img/fubao.jpg" class="commentWriterImg">
+              <div class="commentContent">
+              <p>
+                <span class="commentWriterName">푸바오</span>
+                <span class="commentDate">${date}</span>
+              </p>
+              <p class="commentText">${commentText}</p>
+          </div>
+        </div>
+        <div>
+          <div class="comment">
+            <img src="../img/img/fubao.jpg" class="commentWriterImg">
+              <div class="commentContent">
+              <p>
+                <span class="commentWriterName">gkgkgkasd</span>
+                <span class="commentDate">${date}</span>
+              </p>
+              <p class="commentText">${commentText}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../js/Gesigeul.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Login.css">
+  <title>회원가입</title>
+</head>
+<body>
+  <header>
+    
+  </header>
+  <main>
+    <div class="LoginBox">
+      <div class="Logo"><img src="../img/image/Logo.jpg" id="LoginGo"></div>
+      <div class="LoginDivPd">
+        <p class="Email">
+          <b>이메일(아이디)</b>
+        </p>
+        <input type="text">
+        <p class="Email">
+          <b>이름</b>
+        </p>
+        <input type="text">
+        <p>
+          <b>비밀번호</b>  
+        </p>
+        <input type="password">
+        <p class="Tel">
+          <b>전화번호</b>
+        </p>
+        <input type="text">
+        <p class="Birth">
+          <b>생년월일</b>
+        </p>
+        <input type="text">
+      </div>
+      <div class="ButtonBox">
+        <button class="SignUp">가입하기</button>
+        <button class="LogIn" onclick="location.href='Login.html';">로그인</button>
+      </div>
+    </div>
+    <div id="modalWrap"> <!-- 모달 창을 감싸는 div -->
+      <div id="modalBody">
+        <span id="closeBtn">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+        <p>모달창 내용!</p> <!-- 모달 창 내용 -->
+      </div>
+    </div>
+    
+  </main>
+  <script src="../js/Login.js"></script>
+</body>
+</html>

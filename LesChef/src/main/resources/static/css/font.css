@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "inter";
+  font-weight: 300;
+  src: url("../font/Inter/static/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: "inter";
+  font-weight: 500;
+  src: url("../font/Inter/static/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "inter";
+  font-weight: 700;
+  src: url("../font/Inter/static/Inter-ExtraBold.ttf");
+}
+
+
+@font-face {
+  font-family: "kopub";
+  font-weight: 700;
+  src: url("../font/kopub/KoPubWorld Batang Light.ttf");
+}
+@font-face {
+  font-family: "kopub";
+  font-weight: 500;
+  src: url("../font/kopub/KoPubWorld Batang Medium.ttf");
+}
+@font-face {
+  font-family: "kopub";
+  font-weight: 900;
+  src: url("../font/kopub/KoPubWorld Batang Bold.ttf");
+}
+
+
+@font-face {
+  font-family: "sans";
+  font-weight: 500;
+  src: url("../font/sans/NotoSansKR-Light.ttf");
+}
+@font-face {
+  font-family: "sans";
+  font-weight: 700;
+  src: url("../font/sans/NotoSansKR-Regular.ttf");
+}
+@font-face {
+  font-family: "sans";
+  font-weight: 900;
+  src: url("../font/sans/NotoSansKR-Bold.ttf");
+}
+
+
+/* 부용이 폰트 */
+@font-face {
+  font-family: 'inter';
+  src: url('../font/Inter-Bold.ttf');
+  font-size:12px;
+
+}
+@font-face{
+  font-family: 'gmarket';
+  src: url('../font/GmarketSansTTFMedium.ttf');
+
+}
+
+/* 상훈이형 폰트 */
+
+@font-face {
+  font-family: 'GreateVibes';
+  font-size: 25px;
+  src: url(../font/GreatVibes-Regular.ttf);
+}

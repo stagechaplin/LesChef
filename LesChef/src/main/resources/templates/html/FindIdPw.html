@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/Login.css">
+  <link rel="stylesheet" href="../css/FindIdPw.css">
+  
+  <title>ID, PW찾기</title>
+</head>
+<body>
+  <header>
+    
+  </header>
+  <main>
+    <!--ㅁㅁ-->
+    <div class="Wrap">
+      <a href="#" class="Logo"><img src="../img/image/Logo.jpg" /></a>
+        <input type="radio" id="FindId" name="show" checked/>
+        <input type="radio" id="FindPw" name="show" />
+        <div class="Switch">
+          <label for="FindId">ID찾기</label>
+          <label for="FindPw">PW찾기</label>
+        </div>
+        <!--content-->
+        <div class="content">
+          <div class="content-dis">
+            <form class="name">
+              <label>이름</label><br>
+              <input type="text" name="name" /><br>
+              <label>전화번호</label><br>
+              <input type="tel" name="tel" /><br>
+              <button type="submit" class="SignUp">찾기</button>
+            </form>
+          </div>
+          <div class="content-dis">
+            <form class="name">
+              <label>이름</label><br>
+              <input type="text" name="name"><br>
+                <label>전화번호</label><br>
+              <input type="tel" name="tel"><br>
+                <label>이메일(아이디)</label><br>
+                <input type="email" name="email"><br>
+                <button class="SignUp">찾기</button>
+              </form>
+          </div>
+        </div>
+        <hr class="underline">
+        <div class="ButtonBox">
+          <p id="AskLogin">로그인 하시겠어요?</p>
+          <button class="LogIn" onclick="location.href='Login.html';">로그인</button>
+        </div>
+    </div>
+    
+  </main>
+</body>
+</html>

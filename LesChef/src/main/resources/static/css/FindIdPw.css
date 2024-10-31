@@ -1,0 +1,100 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+button{
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+body{
+  background-image: url('../image/Ex12.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+.Wrap{
+  position: absolute;
+  right: 0;
+  justify-content: right;
+  width:580px;
+  height: 100vh;
+  background-color:#2C8C6A;
+}
+.Logo{
+  width: 236px;
+  display:block;
+  margin: 0 auto;
+}
+#AskLogin{
+  font-size: 20px;
+  display: block;
+  width: 280;
+}
+.Switch{
+  display: block;
+  width: 236px;
+  height: 60px;
+  margin: 40px auto;
+  margin-bottom:40px;
+  text-align: center;
+}
+.Switch label{
+  width: 100px;
+  border: 1px solid #00301F;
+  border-radius: 20px;
+  font: size 25px;
+  padding: 10px 10px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2C8C6A;
+  cursor: pointer;
+}
+.Switch label:hover{
+  background-color:rgb(19, 107, 92);
+}
+form{
+  width: 60%;
+  margin: 0 auto;
+}
+input{
+  color: white;
+  width: 100%;
+  font-size: 25px;  
+  background-color: #2C8C6A;
+  border: none;
+  border-bottom: 2px solid white;
+  margin: 20px auto;
+}
+input:focus{
+  outline: none;
+}
+.underline{
+  width: 70%;
+  position: relative;
+  margin: 20px auto 0;
+}
+label{
+  font-size: 25px;
+  color: white;
+}
+/* 내용 바꾸기 css*/
+input[type=radio] {
+	display: none;
+}
+
+#FindId:checked ~ .Switch label:nth-child(1),
+#FindPw:checked ~ .Switch label:nth-child(2) {
+	background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+}
+.content > div {
+	display: none;
+}
+#FindId:checked ~ .content div:nth-child(1),
+#FindPw:checked ~ .content div:nth-child(2)  {
+	display: block;
+}
+.content-dis{
+  margin: 0 auto;
+}
+/*내용 바꾸기 끝 */

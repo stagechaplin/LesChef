@@ -1,0 +1,67 @@
+/* 전체 적용 */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+/* 헤더 css */
+header{
+  width:100%;
+  /* min-width: 1920px; */
+  background-color: #fff;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+#headerspace{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 80px;
+}
+#board{
+  padding-top: 50px;
+}
+#icon2{
+  padding-top: 45px;
+}
+#mypageicon{
+  padding-right: 10px;
+}
+#categoryback{
+  width: 100%;
+  height: 55px;
+  background-color: #001B11;
+  display: flex;
+  justify-content: center;
+}
+.name{
+  font-family: 'kopub';
+  font-weight: 900;
+  padding: 10px 0px;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 27px;
+  color: #fff;
+}
+.name span{
+  cursor: pointer;
+}
+#logo{
+  padding-left: 85px;
+}
+.categorybox:hover{
+  border-bottom: 1px solid #fff;
+
+}
+
+#login{
+  cursor: pointer;
+}
+

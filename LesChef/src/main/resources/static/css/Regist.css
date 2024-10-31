@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: url('../img/img/mypage.png');
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  position: relative;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 2% 2% 14%;
+}
+
+.menu {
+  text-align: left;
+  font-size: 2.5vw;
+  color: white;
+  font-weight: bold;
+  margin-top: 200px;
+  text-shadow: 2px 2px 5px black;
+}
+
+.menu p {
+  margin: 1% 0;
+}
+
+.menu span {
+  font-size: 1vw;
+  margin-left: 1%;
+}
+
+.logo {
+  width: 10%;
+  height: 10%;
+  margin-bottom: 15%;
+  margin-left: 2.5%;
+}
+
+.logo img{
+  width: 12vw;
+}
+
+.right {
+  width: 100%;
+  height: auto;
+  padding: 3%;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.lock {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+a {
+  text-decoration: none;
+  color:#fff;
+}
+
+form {
+  display: inline;
+}
+
+label {
+  margin: 1% 0 0.5% 0;
+  font-weight: bold;
+}
+
+select {
+  margin-bottom: 1%;
+  padding: 1vw;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: flex-start;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.clickable-img {
+  display: block;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+
+.rigcontainer {
+  margin-right:10%;
+  width: 57%;
+  height: 70vh;
+  margin-top: 10%;
+  overflow: auto;
+}
+.rigcontainer::-webkit-scrollbar {
+  width: 10px;
+  
+}
+.rigcontainer::-webkit-scrollbar-thumb {
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: border-box;
+  border: 1px solid transparent;
+}
+.rigcontainer::-webkit-scrollbar-track {
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 1px white;
+}
+.recipe-image img {
+  width: 90%;
+  height: auto;
+  margin: 37px;
+  margin-top: 2px;
+}
+.info1 {
+  display: flex;
+}
+
+
+textarea {
+  width: 500px !important;
+  height: 50px !important;
+  resize: none;
+}
+
+.ingredients-section,
+.steps-section {
+    margin-top: 20px;
+}
+
+.ingredients-section h3,
+.steps-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ingredient,
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ingredient-name,
+.ingredient-quantity,
+.step img {
+    margin-right: 10px;
+}
+
+.step img {
+    width: 100px;
+    height: auto;
+    margin:15px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f8a16e;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #e69550;
+}
+
+#login{
+  cursor: pointer;
+}

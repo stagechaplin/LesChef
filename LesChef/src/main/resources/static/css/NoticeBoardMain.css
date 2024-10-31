@@ -1,0 +1,191 @@
+body {
+  background-color: #FFE3D2;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.logoBackGround {
+  background-color: #FEBE98;
+}
+
+/* NoticeBoard 이미지 */
+.boardTopImg {
+  background-image: url("../img/img/boardmain.jpg");
+  background-repeat: no-repeat;
+  width: auto;
+  height: 30vh;
+  text-align: center;
+  position: relative;
+}
+
+.boardTopImg span {
+  position: inherit;
+  top: 25%;
+  font-size: 5vw;
+  font-weight: bold;
+  text-shadow: 0 5px 6px #000;
+  color: #fff;
+}
+
+/* 정렬버튼 가운데정렬, 쓰기아이콘 우측정렬 */
+.arrayWrite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border-bottom: 1px solid #fff;
+}
+
+.arrayButtonBox {
+  flex: 1;
+  text-align: center;
+  padding-left: 7%;
+}
+
+.arrayButtonBox button {
+  width: 10%;
+  height: 50px;
+  border: 0px;
+  border-radius: 20px;
+  background-color: #F8A16E;
+  color: #fff;
+  margin: 0 40px;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px #827e7e;
+}
+
+.arrayButtonBox button:active {
+  box-shadow: 1px 1px 0 #827e7e;
+  position: relative;
+  top: 2px;
+}
+
+/* 게시글 등록 이미지 버튼 */
+.write {
+  text-align: right;
+}
+
+.write img {
+  border-radius: 50px;
+  box-shadow: 0px 2px 3px #827e7e;
+  width: 70px;
+}
+
+.write img:active {
+  box-shadow: 1px 1px 0 #827e7e;
+  position: relative;
+  top: 2px;
+}
+
+/* 게시글 목록 */
+.boardBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 7%;
+}
+
+/* li */
+.boardBox li {
+  width: 19vw;
+  height: 50vh;
+  background-color: #F8A16E;
+  position: relative;
+  list-style: none;
+  margin: 4vh 4vw 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden; /* 추가: li 요소의 크기를 벗어나지 않도록 */
+}
+
+/* li태그 홀수번째마다 스타일 지우고 새로운 margin입력 */
+.boardBox li:nth-of-type(2n-1) {
+  all: unset;
+  width: 19vw;
+  height: 50vh;
+  background-color: #F8A16E;
+  position: relative;
+  list-style: none;
+  margin: 12vh 4vw 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden; /* 추가: li 요소의 크기를 벗어나지 않도록 */
+}
+
+/* 게시글 이미지 */
+dt img {
+  width: 19vw;
+  height: 50vh;
+  transition: transform 0.7s; /* 이미지 확대 애니메이션 */
+}
+
+/* hover 시 이미지 확대 */
+.gesigeul:hover .gesigeulImg {
+  transform: scale(1.1); /* 확대 크기를 줄여서 li 요소의 크기 내에서 확대 */
+  transition: transform 0.7s;
+}
+
+.gesigeul:active {
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px inset;
+}
+
+/* 게시글 제목, 부제목 하단 고정 */
+dd {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* 게시글 제목 */
+.boardContent p {
+  padding: 8px 0;
+  font-size: 80%;
+  font-family: 'gmarket';
+  color: #fff;
+}
+
+/* 게시글 부제목 */
+.boardContent p:nth-child(2) {
+  font-size: 70%;
+  color: #fff;
+}
+
+/* 작성자, 조회수 간격 조정 */
+.writerName {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #E6722E;
+  color: #fff;
+  padding: 10px 0 5px;
+}
+
+.writerNameContent {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px 3px;
+}
+
+/* 작성자, 조회수 아이콘 30px 고정 */
+.writerName img {
+  width: 15%;
+  height: 15%;
+  border-radius: 15px;
+}
+.viewIcon{
+  width:40% !important;
+  height: 40% !important;
+}
+
+.writerNameContent span {
+  font-size: 1vw;
+  padding: 0 10px;
+  margin-right: 1vw;
+}
+
+
+
+

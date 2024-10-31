@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Chef</title>
+    <link rel="stylesheet" href="../css/Rewrite.css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <a href="Rewrite.html">회원정보<span style="font-family: GreateVibes;font-size: 30px;"><u>Information</u></span></a><br>
+                <a href="WishList.html">찜목록<span style="font-family: GreateVibes;font-size: 30px;"><u>WishList</u></span></a><br>
+                <a href="Mycomment.html">나의 댓글<span style="font-family: GreateVibes; font-size: 30px;"><u>My Comment</u></span></a><br>
+                <a href="Regist.html">레시피 등록<span style="font-family: GreateVibes; font-size: 30px;"><u>Registration</u></span></a><br>
+                <a href="Myrecipe.html">나의 레시피<span style="font-family: GreateVibes; font-size: 30px;"><u>My Recipe</u></span></a>
+            </div>
+            <div class="logo">
+                <a href="MainPage.html"><img src="../img/img/logoUpdate.png"></a>
+            </div>
+        </div>
+        
+        <div class="right">
+            <div class="profile">
+                <h2>회원정보</h2>
+                <img src="../img/img/profile.png" alt="Click to change image" id="toggleImage" class="clickable-img">
+                <input type="file" id="imageInput" style="display: none;" accept="image/*">
+                <form>
+                    <label>닉네임</label><input type="text"><br>
+                    <label>이름</label><input type="text"><br>
+                    <label>비밀번호</label><input type="password"><br>
+                    <label>연락처</label><input type="text"><br>
+                    <label>이메일</label><input type="email"><br>
+                    <div class="buttons">
+                        <button type="button" href="#">수정</button>
+                        <button type="button" href="#">회원 탈퇴</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="lock">
+            <a href="Login.html"><img src="../img/img/Login.png"></a>
+        </div>
+    </div>
+    <script src="../js/profile.js"></script>
+</body>
+</html>

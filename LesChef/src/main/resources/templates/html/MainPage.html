@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=jsMath-cmbx10&display=swap"
+      rel="stylesheet" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/LoginModal.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Les Chef</title>
+  </head>
+  <body>
+    <div id="left_box">
+    </div>
+    <a href="#"><img class="Logo" src="../img/image/main_logo.png"/></a>
+      <div class="scroll-area">
+        <div class="bg-video">
+          <video class="bg-video__content" src="../img/image/mainFirstVideo.mp4" autoplay muted loop></video>
+        </div>
+        <span class="main_phrase1">재료 준비부터<br> 만드는 법, 조리시간</span>
+        <span class="main_phrase2">한식부터 일식, 양식까지 <br> 다양하게 </span>
+      </div>
+      <div class="scroll-area">
+          <img id="page2-image" src="../img/image/main_2.png" />
+          <span class="main_phrase1">간단한<br>아침 레시피부터</span>
+          <span class="main_phrase2">온가족이 즐길 수 있는<br>저녁 레시피까지</span>
+        </div>
+      <div class="scroll-area">
+          <img id="page3-image" src="../img/image/main_3.png" />
+          <span class="main_phrase1">게시판에서<br>자신의 레시피를</span>
+          <span class="main_phrase2">다른사람들과 함께<br>공유해 보세요!</span>
+      </div>
+      <div class="scroll-area">
+          <img id="page4-image" src="../img/image/main_4.png" />
+          <span class="main_phrase1">검색 기능으로<br>남은 재료를 입력해</span>
+          <span class="main_phrase2">색다른 방법으로<br>음식을 만들어보세요!</span>
+      </div>
+      <div class="scroll-area" id="signup-area">
+          <img id="signup-image" src="../img/image/Ex6.jpg">
+          <div id="signup-box">
+            <a href="#"><img src="../img/image/Logo.jpg"></a>
+            <form action="/signup" method="post" id="signup">
+              <label>이메일(아이디)</label><br>
+                <input type="email" name = "id"/><br>
+                <label>비밀번호</label><br>
+                <input type="password" name = "password" /><br>
+                <label>이름</label><br>
+                <input type="text" name = "name"/><br>
+                <label>닉네임</label><br>
+                <input type="text" name = "nickname"/><br>
+                <label>전화번호</label>
+                <input type="tel" name = "tel" /><br>
+              <button type="submit">회원가입</button>
+            </form>
+            <p>이미 회원이신가요? <span>로그인</span></p>
+          </div>
+      </div>
+      <ul id="left-sidebar">
+        <li id="menu"><img   src="../img/image/Menu.png"/></li>
+        <li id="loginButton"><img src="../img/image/Login.png"/></li> <!---->
+        <li id="myPageButton"><a href="Rewrite.html"><img src="../img/image/마이페이지 1.png"/></a></li> <!---->
+      </ul>
+      <div id="under_box"></div>x
+      <div id="select-menu">
+        <div id="menu-box">
+        <a href="/list"><h1>Korean</h1></a><br>
+        <a href="/list"><h1>Western</h1></a><br>
+        <a href="/list"><h1>Japanese</h1></a><br>
+        <a href="/list"><h1>Chinese</h1></a><br>
+        <a href="/list"><h1>Share Recipe</h1></a><br>
+        <a href="/notice"><h1>Community</h1></a>
+        </div>
+      </div>
+
+    <div class="loginModal">
+      <div class="Login-box">
+        <a id="Login-box-Logo" href="/main"><img src="../img/image/main_logo.png" /></a>
+        <form class="login-form-container">
+          <label>이메일(아이디)</label><br>
+          <input type="email"/><br>
+          <label>비밀번호</label><br>
+          <input type="password"/>
+          <p id="FindIdPw">아이디 / 비밀번호 찾기</p><br>
+          <div id="social-login-block">
+            <a class="social-login" href="#"><img src="../img/image/Kakao.jpg"/></a>
+            <a class="social-login" href="#"><img src="../img/image/Google_logo.png"/></a>
+            <a class="social-login" href="#"><img src="../img/image/Naver_logo.png"/></a>
+          </div>
+          <button class="login-button" type="submit">로그인</button>
+        </form>
+
+        <form class="find-form-container">
+          <div class="id-pw-button">
+            <span class="id-button">아이디</span>
+            <span class="pw-button">패스워드</span>
+          </div>
+          <div class="id-form-container">
+            <label>이름</label>
+            <input type="text"/>
+            <label>휴대폰</label>
+            <input type="text"/>
+          </div>
+          <div class="pw-form-container">
+            <label>이름</label>
+            <input type="text"/>
+            <label>휴대폰</label>
+            <input type="text"/>
+            <label>이메일(아이디)</label>
+            <input type="text"/>
+          </div>
+          <button class="find-button">찾기</button>
+        </form>
+        <p>아직 아이디가 없으신가요?<br> 회원가입으로 더 많은 요리정보를 얻으세요!</p>
+        <a href="MainPage.html#signup-area" class="go-to-join-page">회원가입</a>
+        <p class="find-to-login">이미 회원이신가요? <span>로그인</span></p>
+      </div>
+    </div>
+      <script src="../js/MainPage.js"></script>
+    <script src="../js/loginModal.js"></script>
+    </body>
+</html>

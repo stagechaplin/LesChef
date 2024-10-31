@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regist</title>
+    <link rel="stylesheet" href="../css/Regist.css">
+    <link rel="stylesheet" href="../css/font.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <a href="Rewrite.html">회원정보<span style="font-family: GreateVibes;font-size: 30px;"><u>Information</u></span></a><br>
+                <a href="WishList.html">찜목록<span style="font-family: GreateVibes;font-size: 30px;"><u>WishList</u></span></a><br>
+                <a href="Mycomment.html">나의 댓글<span style="font-family: GreateVibes; font-size: 30px;"><u>My Comment</u></span></a><br>
+                <a href="Regist.html">레시피 등록<span style="font-family: GreateVibes; font-size: 30px;"><u>Registration</u></span></a><br>
+                <a href="Myrecipe.html">나의 레시피<span style="font-family: GreateVibes; font-size: 30px;"><u>My Recipe</u></span></a>
+            </div>
+            <div class="logo">
+                <a href="MainPage.html"><img src="../img/img/logoUpdate.png"></a>
+            </div>
+        </div>
+        <div class="rigcontainer">
+          <h2>레시피 등록</h2>
+        <div class="right">
+          <form>
+            <div class="info1">
+          <div class="info">
+            <label>레시피 제목</label><input type="text"><br>
+            <label>인원</label>
+            <select>
+              <option>1인분</option>
+              <option>2인분</option>
+              <option>3인분</option>
+              <option>4인분</option>
+            </select>
+            <br>
+
+            <!-- <label>카테고리</label>
+            <select>
+              <option>한식</option>
+            </select>
+            <select>
+              <option>탕</option>
+            </select>
+            <br> -->
+
+            <label>소요시간</label>
+            <select>
+              <option>10분</option>
+              <option>20분</option>
+              <option>30분</option>
+            </select> <br>
+
+            <label>난이도</label>
+            <select>
+              <option>쉬움</option>
+              <option>보통</option>
+              <option>어려움</option>
+            </select> <br>
+            </div>
+            
+            <div class="recipe-image">
+              <img src="../img/img/bap.png" alt="Click to change image" id="toggleImage1" class="clickable-img">
+                <input type="file" id="imageInput" style="display: none;" accept="image/*">
+          </div>
+        </div>
+
+          <label>요리소개</label><textarea></textarea>
+
+          <div class="ingredients-section">
+            <h3>재료</h3>
+            <div id="box">
+              <input type="text" placeholder="양파 100g"> <input type="text" placeholder="참기름 2큰술"> <input type="button" value="+"
+              onclick="add_textbox()">
+          </div>
+          
+        </div>
+          <div class="steps-section">
+            <h3>조리순서</h3>
+            <div class="step">
+              <div id="box1">
+                <input type="button" value="+"
+                onclick="add_textbox1()">
+                
+            </div>
+        </div>
+      </div>
+            
+            <div class="buttons">
+              <button type="button" href="#">등록</button>
+              <button type="button" href="#">취소</button>
+          </div>
+          </div>
+        </div>
+            </div>
+              <div class="lock">
+                <a href="Login.html"><img src="../img/img/Login.png"></a>
+            </div>
+            <script src="../js/regist.js"></script>
+            <!-- <script src="../js/profile.js"></script> -->
+  </body>
+</html>

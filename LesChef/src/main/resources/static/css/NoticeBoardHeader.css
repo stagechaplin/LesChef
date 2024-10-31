@@ -1,0 +1,23 @@
+*{
+  padding:0px;
+  margin:0px;
+}
+a{
+  color:#000;
+  text-decoration: none;
+}
+.logoBackGround{
+  text-align:center;
+}
+.logoBackGround img{
+  width: 12%;
+  height: 8%;
+  padding-left:10px;
+}
+#login{
+  position: absolute;
+  top:4%;
+  right:4%;
+  width:3%;
+  cursor: pointer;
+}

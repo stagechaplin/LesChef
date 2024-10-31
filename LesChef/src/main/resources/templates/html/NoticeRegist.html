@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/NoticeBoardHeader.css">
+  <link rel="stylesheet" href="../css/NoticeRegist.css">
+  <title>게시글 등록</title>
+</head>
+<body>
+  <header>
+    <div  class="logoBackGround">
+      <a href="/main"><img src="../img/img/Logo.jpg"></a>
+    </div>
+    <a href="../../mainpage_mir/html/Login.html"><img src="../img/img/Login.png" class="Login"></a>
+  </header>
+  <main>
+    <div class="regiTopImg">
+      <span>게시판</span>
+    </div>
+    <a href="/notice"><img src="../img/img/LArrow.jpg" class="BeforePage"></a>
+    <p class="regi">게시글 등록</p>
+    <!--게시글 등록 내용 전송 폼-->
+    <form>
+      <button type="submit" class="writeBtn">
+        <span>게시글 작성</span>
+        <img src="../img/img/commentWrite.jpg">
+      </button>
+      <div class="registBox">
+        <span>
+          <div class="registTitle">제목<br><textarea class="titleName" placeholder="제목을 입력하세요" maxlength="33"></textarea></div>
+          <!--img클릭 시 input열림-->
+          <img src="../img/img/imgInput.jpg" id="toggleImage" class="click_Img">
+          <input type="file" id="imageInput" style="display:none;" accept="image/*"> 
+        </span>
+        <!--게시글 내용-->
+        <textarea class="gesiContent" placeholder="내용을 입력하세요"></textarea>
+      </div>
+    </form>
+    <!--폼-->
+  </main>
+  <script src="../js/NoticeRegist.js"></script>
+</body>
+</html>

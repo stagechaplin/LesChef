@@ -1,0 +1,319 @@
+/* 메인 사진 윗 부분 css */
+
+#sort{
+  font-family: 'kopub';
+  font-weight: 700;
+  position: relative;
+  top:235px;
+  left: 25%;
+  font-size: 20px;
+  color: #999999;
+}
+#title{
+  font-family: 'kopub';
+  font-weight: 900;
+  position: relative;
+  top:240px;
+  left: 25%;
+  font-size: 40px;
+}
+#mainimg{
+  position: absolute;
+  top:330px;
+  left: 25%;
+  /* width: 924px;
+  height: 572px; */
+  width:50%;
+}
+
+#eye{
+  position: relative;
+  top: 220px;
+  left: 69%;
+}
+#eyenum{
+  font-family: 'sans';
+  font-weight: 900;
+  color: #999999;
+  position:relative;
+  top: 190px;
+  left: 71.5%;
+  width:150px;
+}
+
+/* 메인 사진 옆 사이드 바 css */
+
+#cell{
+  position:fixed;
+  top:350px;
+  left: 78%;
+  border: 0px solid black;
+  border-radius: 20px;
+  background-color: #E6E6E6;
+  width: 260px;
+  height: auto;
+  max-height: 941px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow: auto;
+}
+#cell > span {
+  font-size: 30px;
+  font-family: 'kopub';
+  font-weight: 900;
+}
+#cell > p {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+  font-family: 'kopub';
+  font-weight: 900;
+  padding-left: 10px; 
+}
+.aside{
+  position: fixed;
+  /* border: 1px solid black; */
+  width: 300px;
+  top: 250px;
+  left: 77%;
+}
+#asideicon1{
+  padding-left: 80px;
+}
+#asideicon2{
+  padding-left: 30px;
+}
+
+
+/* 메인 사진 아랫부분 */
+.allicon{
+  display: flex;
+  position: relative;
+  top: 725px;
+  padding-left: 56%;
+  padding-bottom: 15px;
+  }
+  .allicon img{
+    width:40px;
+  }
+  .allicon2{
+    padding-left: 770px;
+  }
+.selecticon{
+  padding-left: 15px;
+}
+#selecticon2{
+  padding-top: 3px;
+}
+
+#selecticon3{
+  padding-left: 3px;
+}
+.selecticon span{
+  font-family: 'sans';
+  font-weight: 900;
+  font-size: 15px;
+  color: #999999;
+}
+#line1{
+  position: relative;
+  top: 670px;
+  width:760px;
+  left: 25%;
+}
+
+/* 선 부분 */
+
+#descript{
+  font-family: 'kopub';
+  font-weight: 900px;
+  position:relative;
+  top: 650px;
+  right: 25%;
+  font-size: 50px;  
+}
+
+
+/* 레시피 설명문 그리드 css*/
+
+.containerwap{
+  padding: 730px 350px 0px 380px; 
+}
+
+.gridcontainer{
+  display: grid;
+  grid-template-columns: 320px 120px 320px ;
+  grid-template-rows: repeat(2, 50px 350px) ;
+}
+/* script 전체 적용 css */
+.script{
+  font-family: 'kopub';
+  font-weight: 900;
+  font-size: 30px;
+}
+/* script 부분 적용 css */
+.script1{
+  width:95%; 
+}
+.script2{
+  grid-column-start: 2;
+  
+}
+.script3{
+  font-family: 'kopub';
+  font-weight: 900;
+padding-top: 15px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  font-size: 20px;
+  border-top: 1px solid #b8b8b8;
+}
+.script4{
+  grid-column-start: 3;
+  justify-self: end;
+  width:95%; 
+}
+.script5{
+  grid-row-start: 3;
+  align-content: end;
+}
+.script6{
+  font-family: 'kopub';
+  font-weight: 900;
+padding-top: 15px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 20px;
+  border-top: 1px solid #b8b8b8;
+}
+
+/* 댓글 및 평점 기능 */
+
+/* 전체 평점 */
+#total{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 30px;
+  margin-left: 23%;
+  width: 790px;
+  height: 90px;
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+}
+.totalimg{ 
+  position: relative;
+  top:0px;
+  padding-left: 100px;
+  padding-right: 30px;
+
+}
+.totalnumber{
+  font-family: 'sans';
+  font-weight: 900;
+  font-size: 35px;
+}
+.totalnumber1{  
+  padding-left: 80px;
+}
+.totalnumber2{
+  color:#4d4d4d;
+}
+
+/* 댓글 */
+#comentcontainer{
+  margin: 30px 23%;
+  width:790px;
+  border-bottom: 1px solid #b8b8b8;
+}
+.comentbox{
+  padding-left: 80px;
+  margin-bottom: 50px;
+}
+.coment{
+  height: 50px;
+  width:670px;
+  display: flex;
+}
+.comentimg{
+  width:40px;
+  height: 40px;
+}
+.comentnickname{
+  font-family: 'sans';
+  font-weight: 900;
+  font-size: 20px;
+  padding-left: 15px;
+}
+.allstar{
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.allstar span{
+  color: #4d4d4d;
+  padding-left: 15px;
+  font-family: 'sans';
+  font-weight: 700;
+  font-size: 15px;
+}
+.comentstar{
+  width:20px;
+  height:20px;
+}
+.comenttext{
+  font-family: 'sans';
+  font-weight: 900;
+  font-size: 16px;
+  padding-left: 60px;
+}
+.comentbox hr{
+  height: 1px;
+  background-color: #4d4d4d;
+  margin-left: 57px;
+  margin-top: 15px;
+}
+
+/* 댓글 작성 */
+#reviewcontainer{
+  margin-left: 23%;
+  margin-bottom: 100px;
+  padding-left: 5%;
+}
+#review{
+  font-family: 'sans';
+  font-weight: 900;
+  font-size: 30px;
+}
+#starcontainer{
+  padding: 10px 5px 10px 0px;
+}
+.countingstar{
+  width:30px;
+  height: 30px;
+}
+#areasize{
+  padding: 20px;
+  width: 650px;
+  height: 150px;
+  font-family: 'sans';
+  font-weight: 900;
+  font-size: 15px;
+}
+#resist{
+  margin-left: 430px;
+  background-color: #003320;
+  border: 1px solid #003320;
+  border-radius: 10px;
+  width:80px;
+  height: 30px;
+  font-family: 'kopub';
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+#resist:hover{
+  background-color: #570000;
+  border: #570000;
+}
+

@@ -1,0 +1,188 @@
+/*로그인 모달*/
+.loginModal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -10;
+}
+
+.loginModal.active{
+    z-index: 101;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.Login-box {
+    position: absolute;
+    left: 37vw;
+    top: 5vh;
+    width: 26vw;
+    height: 90vh;
+    background-color: #00301F;
+    box-shadow: 0 0 4px 0 black;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    /* pointer-events: none; */
+}
+
+.Login-box.active{
+    opacity: 1;
+}
+
+.Login-box label{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-left: 11%;
+    color: white;
+}
+.Login-box input{
+    color:white;
+    font-size: 15px;
+    display: block;
+    width: 77%;
+    background-color: #00301F;
+    border: 0;
+    border-bottom: 2px solid white;
+    margin: 0 auto;
+}
+.Login-box input:focus{
+    outline: none;
+}
+
+#FindIdPw{
+    font-size: 17px;
+    width: 50%;
+    text-decoration: none;
+    color:white;
+    position: absolute;
+    right: 6%;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#FindIdPw:visited{
+    text-decoration: none;
+}
+#Login-box-Logo{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin: 3vh 0;
+}
+
+#Login-box-Logo img{
+    width: 45%;
+    margin-left: 10px;
+}
+
+.go-to-join-page, .login-button{
+    display: block;
+    margin: 0 auto;
+    font-size: 19px;
+    color:white;
+    background-color: #79AE84;
+    width: 72%;
+    height: 6vh;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.go-to-join-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.go-to-join-page:hover, .login-button:hover{
+    background-color: #194033;
+}
+
+.Login-box hr{
+    width: 80%;
+}
+#social-login-block{
+    display: flex;
+    width: 76%;
+    text-align: center;
+    justify-content: space-around;
+    margin: 2vh auto;
+
+}
+.Login-box .social-login img{
+    background-color: #79AE84;
+    display: inline-block;
+    width: 4vw;
+    height: 8vh;
+    border-radius: 20px;
+    margin: 10px 10px;
+}
+
+.Login-box p{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/*찾기 form*/
+.id-pw-button{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 0 20%;
+}
+
+.id-pw-button span{
+    background-color: #28442d;
+    padding: 8px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.id-form-container, .pw-form-container{
+    margin: 20px auto;
+    width: 95%;
+}
+
+.find-form-container input{
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+
+.find-to-login{
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.find-to-login span{
+    margin-left: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.find-to-login span:hover{
+    text-decoration: underline;
+}
+
+.Login-box button{
+    display: block;
+    margin: 0 auto;
+    font-size: 19px;
+    color:white;
+    background-color: #79AE84;
+    width: 72%;
+    height: 6vh;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.Login-box button:hover{
+    background-color: #194033;
+}
