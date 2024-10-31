@@ -23,7 +23,7 @@ public class Customer implements UserDetails { //UserDetails를
     @Id
     @Column(name = "id")
     private String id;
-    @Column(name = "password", nullable = false)
+    @Column(name = "password")
     private String pw;
     @Column(name = "nickname")
     private String nickname;

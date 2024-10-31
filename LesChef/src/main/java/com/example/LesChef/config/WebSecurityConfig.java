@@ -45,7 +45,7 @@ public class WebSecurityConfig {
                 .headers(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize // 로그인 없이 이동 가능한 메서드 및 페이지
                         .requestMatchers("/signup","/findId","/findPwd").permitAll()
-                        .requestMatchers("/main/**", "/list/**","/NoticeBoardMain")
+                        .requestMatchers("/main", "/list/**","/NoticeBoardMain")
                         .permitAll().anyRequest().authenticated()
                 )
 
@@ -62,7 +62,7 @@ public class WebSecurityConfig {
                                 HttpSession session = request.getSession(true);
                                 session.setAttribute("customer", customer);
                                 session.setMaxInactiveInterval(1800);
-                                response.sendRedirect("/main");
+                                response.sendRedirect("/list");
 
                             }
 
