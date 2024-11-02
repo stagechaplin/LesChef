@@ -44,7 +44,7 @@ public class WebSecurityConfig {
                 .csrf(AbstractHttpConfigurer::disable)
                 .headers(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authorize -> authorize // 로그인 없이 이동 가능한 메서드 및 페이지
-                        .requestMatchers("/signup","/findId","/findPwd").permitAll()
+//                        .requestMatchers("/signup","/findId","/findPwd").permitAll()
                         .requestMatchers("/main", "/list/**","/NoticeBoardMain")
                         .permitAll().anyRequest().authenticated()
                 )

@@ -24,6 +24,6 @@ public class CustomerDetailService implements UserDetailsService {
     public UserDetails loadUserByUsername(String id) throws UsernameNotFoundException {
         Customer customer = customerRepository.findById(id)
                 .orElseThrow(() -> new UsernameNotFoundException("아이디를 찾을 수 없습니다." + id));
-        return new User(customer.getId(), customer.getPw(), Collections.singleton(new SimpleGrantedAuthority("ROLE_CUSTOMER")));
+        return new User(customer.getId(), customer.getPassword(), Collections.singleton(new SimpleGrantedAuthority("ROLE_CUSTOMER")));
     }
 }

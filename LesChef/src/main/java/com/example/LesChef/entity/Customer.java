@@ -24,7 +24,7 @@ public class Customer implements UserDetails { //UserDetails를
     @Column(name = "id")
     private String id;
     @Column(name = "password")
-    private String pw;
+    private String password;
     @Column(name = "nickname")
     private String nickname;
     @Column(name = "name", nullable = false)
@@ -37,7 +37,7 @@ public class Customer implements UserDetails { //UserDetails를
     @Builder
     public Customer(String id, String password, String name, String nickname, String tel){
         this.id = id;
-        this.pw = password;
+        this.password = password;
         this.name = name;
         this.nickname = nickname;
         this.tel = tel;
@@ -53,7 +53,7 @@ public class Customer implements UserDetails { //UserDetails를
     }
     @Override
     public String getPassword() {
-        return pw;
+        return password;
     }
 
 
