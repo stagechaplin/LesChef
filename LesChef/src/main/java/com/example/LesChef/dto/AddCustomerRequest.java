@@ -11,7 +11,7 @@ import java.sql.Blob;
 // 회원 가입 필요한 아이디 받기
 public class AddCustomerRequest {
     private String id;
-    private String pw;
+    private String password;
     private String nickname;
     private String name;
     private String tel;

@@ -31,16 +31,19 @@ public class Customer implements UserDetails { //UserDetails를
     private String name;
     @Column(name = "tel", nullable = false)
     private String tel;
+    @Column(name = "customerImg", nullable = false)
+    private String customerImg;
 //    @Column(name = "profileImg") //null 가능
 //    private Blob profileImg;
 
     @Builder
-    public Customer(String id, String password, String name, String nickname, String tel){
+    public Customer(String id, String password, String name, String nickname, String tel, String customerImg){
         this.id = id;
         this.password = password;
         this.name = name;
         this.nickname = nickname;
         this.tel = tel;
+        this.customerImg = customerImg;
     }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

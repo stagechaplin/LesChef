@@ -14,7 +14,7 @@ public class MainController {
     }
 
     @GetMapping("/FindIdPw")
-    public String findIdPw(){
+    public String findIdPassword(){
         return "/html/FindIdPw";
     }
 
